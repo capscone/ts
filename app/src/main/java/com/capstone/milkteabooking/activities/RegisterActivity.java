@@ -1,7 +1,6 @@
 package com.capstone.milkteabooking.activities;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,6 +13,7 @@ import com.capstone.milkteabooking.api.services.UserService;
 import com.capstone.milkteabooking.utilities.AppConst;
 import com.capstone.milkteabooking.utilities.Validation;
 
+import androidx.appcompat.app.ActionBar;
 import io.reactivex.disposables.Disposable;
 import retrofit2.Call;
 import retrofit2.Callback;

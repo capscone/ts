@@ -6,10 +6,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
@@ -26,6 +22,10 @@ import com.capstone.milkteabooking.utilities.Utils;
 import java.io.IOException;
 import java.net.InetAddress;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import de.hdodenhof.circleimageview.CircleImageView;
 import okhttp3.ResponseBody;
 
@@ -64,7 +64,7 @@ public abstract class BaseActivity extends AppCompatActivity implements BaseCont
         callDataResource();
     }
 
-    private void initToolbar() {
+    protected void initToolbar() {
         Toolbar toolbar = findViewById(R.id.toolbar); // get the reference of Toolbar
         setSupportActionBar(toolbar);
         setToolbarAvatarClickListener(toolbar);

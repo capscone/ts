@@ -2,7 +2,6 @@ package com.capstone.milkteabooking.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
@@ -20,6 +19,7 @@ import com.capstone.milkteabooking.utilities.CoreManager;
 import com.capstone.milkteabooking.utilities.Validation;
 import com.google.gson.internal.LinkedTreeMap;
 
+import androidx.appcompat.widget.Toolbar;
 import de.hdodenhof.circleimageview.CircleImageView;
 import io.reactivex.disposables.Disposable;
 import retrofit2.Call;

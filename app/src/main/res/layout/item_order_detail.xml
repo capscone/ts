@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/txt_name_item_orderdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="tran trau duong den" />
+
+    <TextView
+        android:id="@+id/txt_price_item_orderdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="2000 vnd"
+
+        />
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/txt_name_item_orderdetail">
+
+        <Button
+            android:id="@+id/btn_minus_item_orderdetail"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:text="-"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edt_quantity_item_orderdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn_plus_item_orderdetail"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:text="+"
+            android:textSize="20sp" />
+    </LinearLayout>
+</RelativeLayout>

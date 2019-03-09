@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/color_blue_500"
+    android:background="@color/color_red_300"
     android:elevation="4dp"
     android:minHeight="?attr/actionBarSize">
 
@@ -18,6 +18,7 @@
             android:layout_toLeftOf="@id/imgAvatar"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
+            android:visibility="invisible"
             android:src="@drawable/ic_notifications_black_24dp"
             android:background="@color/color_transparent" />
 
@@ -31,6 +32,7 @@
             android:gravity="center"
             android:textSize="8sp"
             android:textStyle="bold"
+            android:visibility="invisible"
             android:layout_alignRight="@id/btn_toolbar_notification" />
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -39,17 +41,9 @@
             android:layout_height="40dp"
             android:layout_marginRight="5dp"
             android:layout_alignParentRight="true"
+            android:visibility="invisible"
             android:src="@drawable/avatar" />
 
-        <TextView
-            android:id="@+id/txt_title_toolbar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Trang chu"
-            android:textSize="@dimen/label_size_big"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:textColor="@color/white" />
 
         <ImageButton
             android:id="@+id/btn_toolbar_back"
@@ -58,6 +52,19 @@
             android:src="@drawable/ic_arrow_back_black_24dp"
             android:background="@color/color_transparent"
             android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/txt_title_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trang chu"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/label_size_big"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn_toolbar_back"
+
+            android:textColor="@color/white" />
     </RelativeLayout>
 
-</android.support.v7.widget.Toolbar>
+</androidx.appcompat.widget.Toolbar>
